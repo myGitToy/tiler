@@ -16,7 +16,8 @@ ROTATIONS = [0]
 # (COLOR_DEPTH = 32 -> 32 * 32 * 32 = 32768 colors)
 COLOR_DEPTH = 32
 # tiles scales (1 = default resolution)
-RESIZING_SCALES = [0.5, 0.4, 0.3, 0.2, 0.1]
+RESIZING_SCALES = [0.1]
+#[0.5, 0.4, 0.3, 0.2, 0.1]
 # number of pixels shifted to create each box (tuple with (x,y))
 # if value is None, shift will be done accordingly to tiles dimensions
 PIXEL_SHIFT = (5, 5)
@@ -25,11 +26,11 @@ OVERLAP_TILES = False
 # render image as its being built
 RENDER = False
 # multiprocessing pool size
-POOL_SIZE = 8
+POOL_SIZE = 56
 
 # out file name
 OUT = 'out.png'
 # image to tile (ignored if passed as the 1st arg)
-IMAGE_TO_TILE = None
+IMAGE_TO_TILE = ".\\input\\W020180123349571564309.jpg"
 # folder with tiles (ignored if passed as the 2nd arg)
-TILES_FOLDER = None
+TILES_FOLDER = ".\\tiles\\times\\gen_times"
